@@ -1,0 +1,82 @@
+/* Start Roots */
+:root {
+  --Moderateviolet: hsl(263, 55%, 52%);
+  --Verydarkgrayishblue: hsl(217, 19%, 35%);
+  --Verydarkblackishblue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  --Lightgray: hsl(0, 0%, 81%);
+  --Lightgrayishblue: hsl(210, 46%, 95%);
+}
+/* End Roots */
+  
+/* Start Globals */
+html {
+  font-size: 100%;
+  line-height: 1.3;
+}
+* {
+  box-sizing: border-box;
+}
+  
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+  
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+  
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+  
+a {
+  text-decoration: none;
+}
+  
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+/* End Globals */
+  
+/* Start Media Qurise */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 760px;
+  }
+}
+  
+@media (min-width: 922px) and (max-width: 1199px) {
+  .container {
+    width: 900px;
+  }
+}
+  
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Media Qurise */
