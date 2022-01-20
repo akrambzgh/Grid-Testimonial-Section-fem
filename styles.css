@@ -25,7 +25,7 @@ html {
 }
   
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -80,3 +80,126 @@ img {
   }
 }
 /* End Media Qurise */
+
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--Lightgrayishblue);
+  padding: 30px 0;
+}
+.main .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 30px;
+}
+@media (max-width: 1199px) and (min-width: 922px) {
+    .main .content {
+            grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 400px);
+    }
+}
+@media (max-width: 921px) {
+    .main .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 400px);
+    }
+}
+.main .content .box {
+  padding: 15px;
+  border-radius: 15px;
+  color: var(--White);
+}
+.main .content .box.first {
+  background-color: var(--Moderateviolet);
+  grid-column: span 2;
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+@media (max-width: 921px) {
+    .main .content .box.box.first {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+}
+.main .content .box.sec {
+  background-color: var(--Verydarkgrayishblue);
+}
+.main .content .box.third {
+  background-color: var(--White);
+  grid-row: span 2;
+}
+.main .content .box.third .user .details h3 {
+    color: var(--Verydarkblackishblue);
+}
+.main .content .box.third .user .details h4 {
+    color: var(--Verydarkblackishblue);
+}
+.main .content .box.third h4.big-text {
+    color: var(--Verydarkblackishblue);
+}
+.main .content .box.third p {
+    color: var(--Verydarkblackishblue);
+}
+.main .content .box.four {
+    background-color: var(--White);
+}  
+.main .content .box.box.four .user .details h3 {
+    color: var(--Verydarkblackishblue);
+}
+
+.main .content .box.box.four .user .details h4 {
+    color: var(--Verydarkblackishblue);
+}
+
+.main .content .box.box.four h4.big-text {
+    color: var(--Verydarkblackishblue);
+}
+
+.main .content .box.box.four p {
+    color: var(--Verydarkblackishblue);
+}
+.main .content .box.five {
+  background-color: var(--Verydarkblackishblue);
+  grid-column: span 2;
+}
+@media (max-width: 921px) {
+    .main .content .box.five {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+}
+.main .content .box .user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main .content .box .user img {
+  border: 2px solid var(--Verydarkgrayishblue);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.main .content .box .user .details h4 {
+    opacity: 0.5;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.3;
+}
+.main .content .box h4.big-text {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.main .content .box p {
+    margin-top: 10px;
+    opacity: 0.7;
+    line-height: 1.4;
+    font-size: 16px;
+}
